@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SponsorWins — Arena Prototype</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="board">
+    <div class="board-inner">
+      <div class="brand">
+        <div class="badge">SW</div>
+        <div class="titles">
+          <h1>SPONSORSHIP AUCTIONS</h1>
+          <p>Bid. Win. Sponsor the Game.</p>
+        </div>
+      </div>
+      <nav id="leagueNav" class="pills"></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <h2>Premium sponsorship inventory from pro teams.</h2>
+        <p>Season-long packages, single-game features, and arena takeovers across NFL, NBA, NHL, MLB, and MLS.</p>
+        <a class="btn btn-primary" href="#listings">Browse Listings</a>
+      </div>
+      <div class="lights" aria-hidden="true"></div>
+    </section>
+
+    <section class="filters">
+      <div class="field">
+        <label for="leagueSelect">League</label>
+        <select id="leagueSelect"></select>
+      </div>
+      <div class="field">
+        <label for="teamSelect">Team</label>
+        <select id="teamSelect"></select>
+      </div>
+      <div class="field">
+        <label for="assetSelect">Asset Type</label>
+        <select id="assetSelect"></select>
+      </div>
+      <button id="browseBtn" class="btn">Apply</button>
+    </section>
+
+    <section id="listings" class="grid">
+      <div class="grid-head">
+        <h3>Featured Sponsorships</h3>
+        <button id="shuffleBtn" class="btn btn-ghost">Shuffle</button>
+      </div>
+      <div id="listingGrid" class="grid-body"></div>
+    </section>
+  </main>
+
+  <section class="ticker-wrap">
+    <div class="ticker-title">RECENT ACTIVITY</div>
+    <div class="ticker-viewport">
+      <div id="ticker" class="ticker"></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>© 2025 SponsorWins — Prototype Demo</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
